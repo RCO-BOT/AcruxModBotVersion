@@ -11,7 +11,7 @@ const ddiff = require("return-deep-diff")
 const serversettings = require("./models/settings/serversettings.js")
 
 
-mongoose.connect(`mongodb+srv://AcruxBot:xyBhcMqeKpAOFNgd@cluster0-a90rn.mongodb.net/AcruxBot?retryWrites=true&w=majority`, {keepAlive: true, useNewUrlParser: true, useFindAndModify: true, useUnifiedTopology: true})
+mongoose.connect(process.env.MONGODB, {keepAlive: true, useNewUrlParser: true, useFindAndModify: true, useUnifiedTopology: true})
 
 
  
